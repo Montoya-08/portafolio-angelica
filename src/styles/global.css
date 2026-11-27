@@ -88,3 +88,17 @@ img{max-width:100%;display:block}a{color:var(--teal-d)}h1,h2,h3,h4{line-height:1
 @media(max-width:720px){.burger{display:block}.nav nav{position:absolute;top:68px;left:0;right:0;background:var(--bg);flex-direction:column;padding:12px 4%;border-bottom:1px solid var(--teal);display:none}.nav nav.open{display:flex}
 .projects,.interests,.skills{grid-template-columns:1fr}.section{padding:64px 0}.term-body{height:320px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+/* Intro */
+.intro{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;background:#0b1216;cursor:pointer;transition:opacity .9s ease,visibility .9s ease}
+.intro[data-hiding="true"]{opacity:0;visibility:hidden}
+.petals{position:absolute;inset:0;z-index:2;pointer-events:none;overflow:visible}
+.petal{position:absolute;background:currentColor;border-radius:60% 40% 55% 35% / 60% 40% 55% 35%;opacity:.85;filter:drop-shadow(0 2px 4px rgba(0,0,0,.35));animation:petalFall linear infinite}
+@keyframes petalFall{0%{transform:translateY(-12vh) translateX(0) rotate(0deg)}100%{transform:translateY(110vh) translateX(var(--sway,10px)) rotate(720deg)}}
+.intro-content{position:relative;z-index:10;text-align:center;color:#fff;padding:24px}
+.intro h1{font-size:clamp(2.5rem,12vw,7rem);font-weight:800;font-style:italic;font-family:cursive;letter-spacing:.03em;margin:0;text-shadow:0 6px 30px rgba(0,0,0,.55);animation:introName 1.6s ease-out both}
+.cursor{display:inline-block;width:10px;height:1.05em;background:#fff;vertical-align:middle;margin-left:4px;animation:cursorBlink .7s infinite}
+@keyframes cursorBlink{0%,100%{opacity:1}50%{opacity:0}}
+@keyframes introName{0%{opacity:0;transform:translateY(20px) scale(.9)}100%{opacity:1;transform:none}}
+.skip-btn{position:absolute;bottom:8%;z-index:10;margin:0;padding:10px 20px;border:2px solid #fff;background:transparent;color:#fff;border-radius:999px;font:600 .9rem Poppins,sans-serif;cursor:pointer;transition:.2s;text-decoration:none}
+.skip-btn:hover{background:var(--coral);border-color:var(--coral);color:#fff}
+@media(max-width:600px){.intro h1{font-size:clamp(2rem,14vw,4.5rem)}.skip-btn{bottom:6%;font-size:.8rem;padding:8px 16px}.petal{opacity:.7}}

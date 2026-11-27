@@ -69,4 +69,10 @@ export const projects = [
     tech: ['JavaScript'],
     methodology: 'Práctica de comandos y flujos de Git.',
     results: 'Proyecto publicado en GitHub.', image: null, github: 'https://github.com/Montoya-08/Curso-Git', demo: '' },
+  { id: 'docker-graphql', title: 'Docker-Graphql', categories: ['Desarrollo de software'], status: 'desarrollado',
+    description: 'Proyecto de GraphQL con contenedores Docker.',
+    problem: 'Desplegar una API GraphQL usando contenedores Docker.',
+    tech: ['Docker','GraphQL','Node.js'],
+    methodology: 'Desarrollo de API GraphQL y orquestación con Docker.',
+    results: 'Proyecto publicado en GitHub.', image: null, github: 'https://github.com/Montoya-08/Docker-Graphql', demo: '' },
 ]
