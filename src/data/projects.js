@@ -1,4 +1,3 @@
-// ✏️ PROYECTOS. Para agregar uno nuevo, copia un objeto y cambia sus campos.
 // status: 'idea' (ejemplo/idea) | 'desarrollado' (cuando tengas evidencias reales: github, demo, captura).
 // image: importa la captura desde src/assets/projects y pásala aquí, ej:
 //   import captura from '../assets/projects/icfes.png'  →  image: captura

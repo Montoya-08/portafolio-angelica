@@ -1,6 +1,6 @@
 import { Github, Download, FolderOpen, User, Mail } from 'lucide-react'
 import { personal as p } from '../data/personal.js'
-import profile from '../assets/Angeana.jpeg' // ← imagen original, sin modificar
+import profile from '../assets/Angeana.jpeg' 
 
 export default function Hero() {
   return (

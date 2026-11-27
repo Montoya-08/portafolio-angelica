@@ -2,7 +2,7 @@
 export const personal = {
   name: 'Angélica Montoya',
   initials: 'MT',
-  badge: 'Perfil Nivel Tecnológico',
+  badge: 'Perfil Nivel Tecnológo',
   subtitle: 'Desarrollo de software | Análisis de datos | Inteligencia artificial',
   tagline: 'Transformando ideas y datos en soluciones tecnológicas.',
   intro:
